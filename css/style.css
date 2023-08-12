@@ -75,7 +75,12 @@ body{
     font-size: 18px;
     padding: 7px 8px ;
     margin-top: 50px;
+    transition: .5s;
+    cursor: pointer;
 } 
+.header-left .download-button:hover{
+    background-color: lightgray;
+}
 .header-right{
     width: 100%;
 }
@@ -116,6 +121,7 @@ body{
 }
 
 .header-right form a{
+    margin-top: 50px;
     display: block;
     width: 100%;
     text-align-last: center ;
@@ -130,11 +136,304 @@ body{
 .tabs-area{
     background-color: #f5f5f5;
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 15% 35% 40%;
     padding: 100px 7%;
     align-items: center;
     grid-gap: 0 3px;
 }
-.tabs{
-    
+.tabs .tab:nth-child(1){
+    background-color: #ff8b38;
+}
+.tabs .tab{
+    background-color: #333333;
+    width: 90px;
+    height: 90px;
+    margin: 2px 0;
+    text-align-last: center;
+    line-height: 90px;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.tab-text{
+    text-align: justify;
+    margin: 20px 0;
+}
+.tab-text h3{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+.tab-text p{
+    margin-top: 30px;
+}
+.tab-img img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.feature-2{
+    width: 100%;
+    padding: 100px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.content-2-text{
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.content-2-text h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+.content-2-text .content-2-line{
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 20px 0;
+}
+.content-2-text p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color:grey;
+}
+.content-title-1, .content-title-2{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.ct-title-1-icon, .ct-title-2-icon{
+    padding-left: 30px;
+    border: 1px solid #ff8b38;
+    padding: 15px;
+    border-radius: 50%;
+
+}
+.ct-title-1-icon a, .ct-title-2-icon a{
+    color: #ff8b38 ;
+}
+.ct-title-1-icon h4, .ct-title-2-icon h4{
+    font-size: 14px;
+    font-weight: normal;
+}
+.feature-3{
+    background-color: #f5f5f5;
+    padding: 80px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-3 h2{
+    font-size: 18px;
+}
+.feature-3 span{
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 20px 0;
+}
+.feature-3 p{
+    margin: 20px 0;
+    width: 90%;
+    font-size: 14px;
+    color: grey;
+}
+.our-process{
+    width: 100%;
+    padding: 70px 7%;
+    text-align: center;
+}
+.our-process h1{
+    font-size: 30px;
+    font-weight: normal;
+    position:relative;
+    margin-bottom: 35px;
+}
+.our-process h1::after{
+    content:"";
+    width: 70px;
+    height: 2px;
+    background-color: #ff8b38;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-process-heading{
+    margin-bottom: 70px;
+}
+.our-process-heading p{
+    font-size: 14px;
+    color: grey;
+}
+.process-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.process-content span{
+    color: #ff8b38;
+    font-size: 30px;
+    border: 2px solid #ff8b38;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.process-content h4{
+    margin: 20px 0;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.stylish{
+    background-image: url(../img/custom.png);
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.stylish .stylish-layer{
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    color: white;   
+    padding-top: 50px;
+
+}
+.stylish .stylish-layer h1{
+    position: relative;
+    font-size: 45px;
+    font-weight: normal;
+}
+.stylish .stylish-layer h1:active{
+    content:"";
+    position: absolute;
+    bottom:-30px;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+.stylish .stylish-layer p{
+    font-size: 14px;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+.stylish .stylish-layer button{
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+.stylish .stylish-layer button:hover{
+    background-color: rgba(0,0,0,.4);
+}
+.contact{
+    width: 100%;
+    padding: 100 7%;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-text h1{
+    font-size: 35px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 50px;
+}
+.contact-text h1::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: #ff8b38;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-text{
+    margin-bottom: 50px;
+}
+/* .form-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.form-details .details {
+    margin-bottom: 50px;
+}
+.form-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 70px;
+    margin-bottom: 20px;
+}
+.form-details .details input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgrey;
+    color: grey;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    margin-top: 40px;    
+}
+
+.form-details .details input::placeholder{
+    color:lightgray;
+}
+.form-msg textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: gray;
+    padding-top: 50px;
+}
+.form-msg textarea::placeholder{
+    color: lightgray;
+}
+.contact button{
+    background-color: #ff8b38;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px lightgray;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 7px;
+    text-align: center;
+    background-color: black;
+}
+.footer-icon a{
+    color:white;
+    font-size: 25px;
+    margin: 0 20px;
+}
+.footer p{
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
 }
