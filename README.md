@@ -1,3 +1,3 @@
 # Axit-App
-Wellcome to my Github profile 
+Build a responsive website from sketch adobexd
 this is my link to connect: https://doanhuutrung.github.io/Axit-App/
